@@ -1,5 +1,5 @@
 .hero {
-    background: url('/build/pictures/background.jpg') no-repeat center center/cover;
+    background: url('../pictures/background.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 0;
 }
