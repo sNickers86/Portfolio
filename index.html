@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="build/main.css" />
+    <script defer src="build/main.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>Hi, ik ben <span class="explode-text">Nick Weemaes</span></h1>
+        <p>Een creatieve webdesigner en developer met passie voor innovatie.</p>
+        <a
+          href="mailto:nick.weemaes.nw@gmail.com?subject=Neem%20contact%20op&body=Hallo%20Nick%2C%0A%0A%20%20%0A%0A%20Met%20vriendelijke%20groet"
+          class="cta-button"
+          onclick="this.href='mailto:nick.weemaes.nw@gmail.com?subject=Neem%20contact%20op&body=Hallo%20Nick%2C%0A%0A%20%20%0A%0A%20Met%20vriendelijke%20groet';"
+          >Neem contact op</a
+        >
+      </div>
+    </header>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <img
+            src="build/pictures/profielfoto.jpg"
+            alt="Jhon Doe"
+            class="profile-pic"
+          />
+          <div>
+            <h2>Over Mij</h2>
+            <p>
+              Ik ben een junior webdesigner met een passie voor visuele
+              esthetiek en moderne technologieën.
+            </p>
+            <ul>
+              <li class="firstLi"><strong>Email:</strong> nick.weemaes.nw@gmail.com</li>
+              <li class="lastLi"><strong>Telefoon:</strong> +32 491 63 82 55</li>
+            </ul>
+            <a href="/build/pdf/cvNickWeemaes.pdf" class="download-cv" download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Mijn Projecten</h2>
+        <div class="projecten-slideshow">
+          <div class="project-slide fade">
+            <h3>make it happen</h3>
+            <img src="build/pictures/makeItHappen.png" alt="make it happen" class="projecten" />
+          </div>
+          <div class="project-slide fade">
+            <h3>lightopia</h3>
+            <img src="build/pictures/lightopia.png" alt="lightopia" class="projecten" />
+          </div>
+          <div class="project-slide fade">
+            <h3>best of 2024</h3>
+            <img src="build/pictures/bestOf2024.png" alt="best of 2024" class="projecten" />
+          </div>
+
+          <a class="prev" onclick="plusProjectSlides(-1)">❮</a>
+          <a class="next" onclick="plusProjectSlides(1)">❯</a>
+        </div>
+      </div>
+      
+    </section>
+  </body>
+</html>

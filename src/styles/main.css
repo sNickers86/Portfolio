@@ -1,0 +1,18 @@
+@import url("./hero.css");
+@import url("./about.css");
+@import url("./dienst.css");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
