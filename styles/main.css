@@ -1,12 +1,14 @@
-@import url("./hero.css");
-@import url("./about.css");
-@import url("./dienst.css");
+@import url("./split/hero.css");
+@import url("./split/about.css");
+@import url("./split/dienst.css");
+@import url("./split/popup.css");
+@import url("./split/nav.css");
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d1117;
+    background-color: black;
     color: #e6edf3;
 }
 
@@ -14,5 +16,22 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: auto;
-    padding: 20px 0;
+    padding: 0;
+}
+
+.mouse-glow {
+    position: fixed;
+    top: -23px;
+    left: -25px;
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, #facc15 50%, transparent 70%);
+    mix-blend-mode: lighten;
+    filter: blur(20px);
+    opacity: 0.7;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
 }

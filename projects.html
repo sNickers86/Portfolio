@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - projects</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo">Nick Weemaes</h1>
+        <nav class="nav-links" id="navLinks">
+          <a href="./index.html"">home</a>
+          <a href="./about.html">about</a>
+          <a href="./projects.html"  class="active">projects</a>
+        </nav>
+        <div class="burger" id="burger">&#9776;</div>
+      </div>
+    </header>
+
+    <section id="services-1" class="services">
+      <div class="container">
+        <h2>design</h2>
+        <div class="projecten-slideshow">
+          <div class="project-slide fade project-hover">
+            <h3>make it happen</h3>
+            <img
+              src="pictures/makeItHappen.png"
+              alt="make it happen"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>lightopia</h3>
+            <img
+              src="pictures/lightopia.png"
+              alt="lightopia"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>Portfolio opdracht</h3>
+            <img
+              src="pictures/portfolio.png"
+              alt="portfolio"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>Dax</h3>
+            <img src="pictures/dax.jpg" alt="Dax" class="projecten" />
+          </div>
+
+          <a class="prev" onclick="plusProjectSlides(-1)">❮</a>
+          <a class="next" onclick="plusProjectSlides(1)">❯</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-2" class="services">
+      <div class="container">
+        <h2>backend</h2>
+        <div class="projecten-slideshow">
+          <div class="project-slide fade project-hover">
+            <h3>Memory</h3>
+            <img src="pictures/memory.png" alt="Memory" class="projecten" />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>lightopia</h3>
+            <img
+              src="pictures/lightopia.png"
+              alt="lightopia"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>best of 2024</h3>
+            <img
+              src="pictures/bestOf2024.png"
+              alt="best of 2024"
+              class="projecten"
+            />
+          </div>
+
+          <a class="prev" onclick="plusProjectSlides(-1)">❮</a>
+          <a class="next" onclick="plusProjectSlides(1)">❯</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-3" class="services">
+      <div class="container">
+        <h2>all</h2>
+        <div class="projecten-slideshow">
+          <div class="project-slide fade project-hover">
+            <h3>make it happen</h3>
+            <img
+              src="pictures/makeItHappen.png"
+              alt="make it happen"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>lightopia</h3>
+            <img
+              src="pictures/lightopia.png"
+              alt="lightopia"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>best of 2024</h3>
+            <img
+              src="pictures/bestOf2024.png"
+              alt="best of 2024"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>Portfolio opdracht</h3>
+            <img
+              src="pictures/portfolio.png"
+              alt="portfolio"
+              class="projecten"
+            />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>Memory</h3>
+            <img src="pictures/memory.png" alt="Memory" class="projecten" />
+          </div>
+          <div class="project-slide fade project-hover">
+            <h3>Dax</h3>
+            <img src="pictures/dax.jpg" alt="Dax" class="projecten" />
+          </div>
+          
+          <a class="prev" onclick="plusProjectSlides(-1)">❮</a>
+          <a class="next" onclick="plusProjectSlides(1)">❯</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modal-title"></h3>
+        <img id="modal-img" src="" alt="" />
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/project.js"></script>
+  </body>
+</html>

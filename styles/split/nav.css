@@ -1,0 +1,72 @@
+/* Navigatiebalk basisstijl */
+.navbar {
+  background-color: #ffffff;
+  color: #facc15;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+/* Hamburger menu */
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #facc15;
+}
+
+/* Responsive gedrag */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-links a.active {
+  color: #facc15;
+  border-bottom: 2px solid #facc15;
+}
