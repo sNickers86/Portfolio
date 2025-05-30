@@ -3,6 +3,7 @@
 @import url("./split/dienst.css");
 @import url("./split/popup.css");
 @import url("./split/nav.css");
+@import url("./split/footer.css");
 
 body {
     font-family: 'Poppins', sans-serif;
